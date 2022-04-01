@@ -70,6 +70,10 @@ html {
 }
 th {
     width: 200;
-    height: 50;
+    height: 55;
     text-align: left;
+}
+td {
+    vertical-align: top;
+    height: 40;
 }
