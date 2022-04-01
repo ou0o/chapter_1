@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            display: block;
+            margin: 8px;
+        }
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;            
+            font-weight: 400;
+        }
+        ul {
+            display: block;
+            list-style-type: none;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 20px;
+        }
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        ul li:before, aside ul li:before {
+            content: '# ';            
+            color: var(--list-style-color);
+            opacity: .7;
+        }
+        a {
+            color: var(--link-text-color);
+            text-decoration: none;
+            background-color: transparent;
+        }
+        a:hover {
+            color: hotpink;
+        }
+        :root {
+            --main-bg-color: #282a36;
+            --main-text-color: #f8f8f2;
+            --headline-text-color: #8be9fd;
+            --input-border-color: #bd93f9;
+            --input-text-color: #f8f8f2;
+            --link-focus-color: #44475a;
+            --link-focus-accent-color: #f8f8f2;
+            --autocomplete-bg-color: #6272a4;
+            --list-style-color: #ffb86c;
+            --code-bg-color: #44475a;
+            --footer-bg-color: #44475a;
+            --footer-text-color: #ffffff;
+            --link-text-color: #bd93f9;
+            --input-bg-color: #44475a;
+            --input-placeholder-color: #f8f8f2;
+            --link-focus-bg-color: #44475a;
+        }
+        html {
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+        }        
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 0px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h2 id="introduction">Introduction</h2>
+        <ul>
+        <li><a href="#blog">Why use JS?</a></li>
+        <li><a href="table.html">Table</a></li>
+        </ul>
+    <h2 id="JS">JS</h2>
+    <p>is the one</p>
+    <!-- <script>
+        alert("Hello, World");
+    </script> -->
+    <div id="blog" style="font:11pt; font-family:cursive; color:orangered"></div>
+    <script src="sandbox.js"></script>
+</div>
+</body>
+</html> 
