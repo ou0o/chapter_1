@@ -21,6 +21,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 20px;
+    line-height: 2.5;
 }
 li {
     display: list-item;
@@ -38,7 +39,7 @@ a {
     background-color: transparent;
 }
 a:hover {
-    color: hotpink;
+    color: var(--link-hover-color);
 }
 :root {
     --main-bg-color: #282a36;
@@ -57,17 +58,13 @@ a:hover {
     --input-bg-color: #44475a;
     --input-placeholder-color: #f8f8f2;
     --link-focus-bg-color: #44475a;
+    --link-hover-color: hotpink;
 }
 html {
-    line-height: 1.15;
+    line-height: 1.2;
     -webkit-text-size-adjust: 100%;
 }        
-.center {
-    margin: auto;
-    width: 50%;
-    border: 0px solid green;
-    padding: 10px;
-}
+
 th {
     width: 200;
     height: 55;
@@ -77,3 +74,21 @@ td {
     vertical-align: top;
     height: 40;
 }
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 0px solid green;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh; /* Set the height of the container to full viewport height */
+    font: 10pt; 
+    font-family: 'Titillium Web', sans-serif; 
+    color: #6eb3ab
+  }
+  
