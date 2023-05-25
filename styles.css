@@ -21,7 +21,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 20px;
-    line-height: 2.5;
+    line-height: 1.5;
 }
 li {
     display: list-item;
@@ -63,6 +63,7 @@ a:hover {
 html {
     line-height: 1.2;
     -webkit-text-size-adjust: 100%;
+    font-family: 'Titillium Web', sans-serif; 
 }        
 
 th {
