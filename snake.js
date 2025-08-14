@@ -1,4 +1,4 @@
-s = (S,n) => {
+const snake = (S,n) => {
     t = [...S];
     a = Array.from(Array(n), r => Array(2*n).fill(e=' '));
     x = y = 0;
@@ -31,14 +31,17 @@ s = (S,n) => {
   
 const button = document.getElementById("snakeButton");
 
+const snakeChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const snakeSize = 5;
+
 button.addEventListener("click", function() {
-  const pattern = s("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 5);
+  const pattern = snake(snakeChars, snakeSize);
   console.log(pattern);
 
-  for (let outerArray of pattern) {
-    for (let innerArray of outerArray) {
-      console.log(innerArray);
-    }
+  console.log(snakeChars);
+
+  for (let row of pattern) {
+    console.log(row.join(' '));
   }
  
 });
